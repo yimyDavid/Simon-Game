@@ -1,0 +1,244 @@
+
+.simon-container{
+  position: relative;
+  height: 600px;
+  width: 600px;
+  border: 16px solid #333;
+  border-radius: 50%;
+  background-color: #333;
+  margin: 10% auto;
+  box-sizing: border-box;
+  box-shadow: -0px -0px 33px black;
+  overflow: hidden;
+}
+
+.green{
+  //background-color: green;
+  background-color: yellow;
+  border-right: 8px solid #333;
+  border-bottom: 8px solid #333;
+}
+
+.red{
+  //background-color:red;
+  //background-color: #FF2828;
+  border-left: 8px solid #333;
+  border-bottom: 8px solid #333;
+}
+
+.yellow{
+  //background-color: yellow;
+  //background-color: #E4FF1A;
+  border-right: 8px solid #333;
+  border-top: 8px solid #333;
+}
+
+.blue{
+  //background-color: blue;
+  //background-color: #1BE7FF;
+  //box-shadow: inset 6px 6px 120px blue;
+  border-left: 8px solid #333;
+  border-top: 8px solid #333;
+ 
+}
+
+.button-setting{
+  width: 50%;
+  height: 50%;
+  box-sizing: border-box;
+  float: left;
+ 
+   
+}
+
+.controls{
+  background-color: #ddd;
+  height: 300px;
+  width: 300px;
+  border: 16px solid #333;
+  border-radius: 50%;
+  //z-index: 3;
+  margin-top: 21.5%;
+  margin-left: 21.5%;
+  position: absolute;
+  box-shadow: inset 0px 0px 20px #333, 1px 1px 25px black;
+}
+
+.ledgreen{
+  background-color: #6EEB83;
+  box-shadow: inset 0 0 100px green;
+}
+
+.ledyellow{
+  background-color: #FFFF32;
+  box-shadow: inset 0 0 100px #AAAA00;
+}
+
+.ledred{
+  background-color: red;
+  box-shadow: inset 0 0 100px #9B0000;
+}
+
+.ledblue{
+  background-color: #075EFF;
+  box-shadow: inset 0 0 100px #00007F;
+}
+
+.offgreen{
+  background-color: green;
+}
+.offred{
+  background-color: #9B0000;
+}
+
+.offyellow{
+  background-color: #AAAA00;
+}
+.offblue{
+  background-color: #00007F;
+}
+
+/* Style for the controls and stats*/
+.ctr-container{
+  font-family: 'Teko', sans-serif; 
+  //background-color: purple;
+  padding: 10px;
+  position: relative;
+  margin-top: 30px;
+  //overflow: hidden;
+  
+}
+
+.game-name{
+  padding: 16px;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.center{
+  margin: 0 auto;
+  text-align: center;
+}
+
+.score{
+  width: 55px;
+  height: 45px;
+  border: 5px solid gray;
+  border-radius: 10px;
+  background-color: #111111;
+  
+}
+
+.score p{
+  margin-top: 6px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: red;
+}
+
+.start{
+  margin-top: 15px;
+  width: 20px;
+  height: 20px;
+  border: 5px solid gray;
+  background-color: #9B0000;
+  border-radius: 50%;
+}
+
+.start span{
+  position: absolute;
+  margin-top: -22px;
+  margin-left: -15px;
+}
+
+
+
+.strict-mode{
+  margin-top: 15px;
+  vertical-align: center;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  border: 5px solid gray;
+  background-color: #333;
+}
+
+.strict-mode span{
+  position: absolute;
+  margin-top: -22px;
+  margin-left: -15px;
+}
+
+.ctr-glob-sett{
+  //vertical-align: center;
+  float: left;
+  margin-right: 20px;
+  margin-left: 20px;
+  
+}
+
+
+.row-stat{
+ 
+  margin-left: 20px;
+}
+
+.on-off-switch{
+  /*Needs to be relative to place the .button on the right */
+  position: relative;
+  margin: 20px auto;
+  width: 80px;
+  height: 30px;
+  //clear:both;
+  border-radius: 5px;
+  border: 5px solid gray;
+  box-shadow: inset 1px 2px 5px , 1px 2px 1px #333, inset 1px 2px 5px lightgray;
+  background-color: darkgray;
+}
+
+.on-off-switch .on{
+  position: absolute;
+  margin-top: -20px;
+}
+.on-off-switch .off{
+  position: absolute;
+  margin-top: -20px;
+  right: 0;
+}
+
+.button{
+  position: absolute;
+  border-radius: 2px;
+  background-color: lightblue;
+  margin-top: 1px;
+  margin-left: 1px;
+  box-shadow: 1px 0px 3px black;
+  width: 28px;
+  height: 28px;
+  right: 0px;
+}
+
+/* buttons actions*/
+.switchOn{
+  left: 0;
+}
+
+.strictOn{
+  background-color:yellow;
+}
+
+.clearfix:after { 
+   content: "."; 
+   visibility: hidden; 
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+.author{
+  color: gray;
+  font-size: 1.2rem;
+  padding: 20px;
+  text-align:center;
+  font-family: 'Teko', sans-serif; 
+}
