@@ -242,3 +242,114 @@
   text-align:center;
   font-family: 'Teko', sans-serif; 
 }
+
+@media only screen and (max-width: 599px) {
+  .simon-container{
+     transition: all 0.5s ease;
+    width: 350px;
+    height: 350px;
+  }
+  
+  .controls{
+    transition: all 0.5s ease;
+    width: 150px;
+    height: 150px;
+  }
+  
+  .ctr-container{
+     transition: all 0.5s ease;
+    margin-top: 0px;
+  //overflow: hidden;
+  
+}
+
+.game-name{
+  padding: 8px;
+  font-size: 2rem;
+  font-weight: bold;
+}
+  
+  .strict-mode{
+  height: 15px;
+  width: 15px;
+  border: 2px solid gray;
+}
+
+.strict-mode span{
+  position: absolute;
+  margin-top: -22px;
+  margin-left: -15px;
+}
+  
+.score{
+  width: 30px;
+  height: 25px;
+  border: 5px solid gray;  
+}
+
+.score p{
+  margin-top: 3px;
+  font-size: 1.5rem;
+}
+
+.start{
+  width: 15px;
+  height: 15px;
+  border: 2px solid gray;
+}
+
+.start span{
+  position: absolute;
+  margin-top: -22px;
+  margin-left: -15px;
+}
+  
+  .button{
+  position: absolute;
+  border-radius: 2px;
+ 
+  margin-top: 1px;
+  margin-left: 1px;
+  box-shadow: 1px 0px 3px black;
+  width: 15px;
+  height: 14px;
+  right: 0px;
+}
+  
+ .on-off-switch{
+  /*Needs to be relative to place the .button on the right */
+  margin: 20px auto;
+  width: 40px;
+  height: 15px;
+  //clear:both;
+  border-radius: 5px;
+  border: 2px solid gray;
+  box-shadow: inset 1px 2px 5px , 1px 2px 1px #333, inset 1px 2px 5px lightgray;
+  background-color: darkgray;
+}
+  
+.on-off-switch .on{
+  position: absolute;
+  margin-top: -14px;
+}
+.on-off-switch .off{
+  position: absolute;
+  margin-top: -14px;
+  right: 0;
+}
+  
+ .ctr-glob-sett{
+  //vertical-align: center;
+  float: left;
+  margin-right: 8px;
+  margin-left: 8px;
+  
+}
+  
+.row-stat{
+  margin-left: 0px;
+}  
+  body{
+  transition: all 0.5s ease;
+  }
+}
