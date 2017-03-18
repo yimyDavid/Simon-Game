@@ -272,6 +272,11 @@ function playSound(e){
 var el = document.getElementById('squares');
 
 function removeButtonEvents(){//PONER TODO LOS EVENT EN OTRA FUNCTION PARA REMOVERLOS
+      // Trial to fix sound a touch issues for touch screen (tablets/phones). 
+      // No able to solve it yet.
+      //$(el).unbind('mousedown touchstart');
+      //$(el).unbind('mouseup touchend');
+  
    if(el.removeEventListener){
       el.removeEventListener('mousedown', colorAndSoundEvents, false);
 
@@ -298,6 +303,10 @@ function restoreColorButton(e){
 
 
 function addButtonEvents(){
+    // Trial to fix sound a touch issues for touch screen (tablets/phones). 
+    // No able to solve it yet.
+    // $(el).bind('mousedown', colorAndSoundEvents);
+    // $(el).bind('mouseup', restoreColorButton);
   //Add events
     if(el.addEventListener){
       el.addEventListener('mousedown', colorAndSoundEvents,false);
